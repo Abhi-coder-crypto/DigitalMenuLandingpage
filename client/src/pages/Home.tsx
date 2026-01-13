@@ -64,7 +64,7 @@ export default function Home() {
             
             <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
               Digitize Your Menu,<br/>
-              <span className="text-[#7dbd68]">
+              <span className="text-yellow-500">
                 Boost Your Revenue
               </span>
             </h1>
@@ -78,7 +78,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-[#7dbd68] hover:bg-[#6ca85a] text-white rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-green-100 hover:shadow-2xl hover:shadow-green-200 transition-all hover:-translate-y-1"
+                className="bg-yellow-500 hover:bg-yellow-600 text-black rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
               >
                 Get Started Now
               </Button>
@@ -324,7 +324,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
