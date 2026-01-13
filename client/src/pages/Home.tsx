@@ -10,7 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Smartphone, QrCode, TrendingUp, Clock, ShieldCheck, Zap } from "lucide-react";
+import { Smartphone, QrCode, TrendingUp, Zap } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Home() {
   const mutation = useContactForm();
@@ -333,9 +334,9 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-lg mb-6">Legal</h4>
               <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
+                <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+                <li><Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
           </div>
