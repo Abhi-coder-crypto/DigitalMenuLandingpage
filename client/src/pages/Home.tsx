@@ -184,7 +184,7 @@ export default function Home() {
                 price: "10,000",
                 description: "Perfect for getting started with your digital presence",
                 features: ["Digital QR Menu", "Mobile Viewing", "Up to 50 Items", "Standard Support"],
-                color: "green"
+                color: "vibrant-green"
               }}
             />
             <PricingCard 
@@ -203,7 +203,7 @@ export default function Home() {
                 price: "20,000",
                 description: "Advanced solutions for busy restaurants",
                 features: ["Everything in Dynamic", "Advanced Analytics", "Inventory Management", "24/7 Priority Support"],
-                color: "cream"
+                color: "vibrant-green"
               }}
             />
           </div>
