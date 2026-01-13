@@ -328,9 +328,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center text-white font-bold text-lg">
-                  A
-                </div>
+                <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain brightness-0 invert" />
                 <span className="font-display font-bold text-xl tracking-tight">
                   Airavata Tech
                 </span>

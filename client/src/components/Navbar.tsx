@@ -20,10 +20,7 @@ export function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2 cursor-pointer">
-              {/* Logo Icon */}
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                A
-              </div>
+              <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain" />
               <span className="font-display font-bold text-xl tracking-tight text-gray-900">
                 Airavata Tech
               </span>
