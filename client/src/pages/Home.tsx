@@ -322,12 +322,11 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="font-bold text-lg mb-6">Company</h4>
+              <h4 className="font-bold text-lg mb-6">Quick Links</h4>
               <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><button onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Features</button></li>
+                <li><button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Pricing</button></li>
+                <li><button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Contact</button></li>
               </ul>
             </div>
             
