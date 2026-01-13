@@ -12,9 +12,9 @@ interface PricingTier {
 
 export function PricingCard({ tier }: { tier: PricingTier }) {
   const bgStyles = {
-    green: "bg-[#F9E104] border-[#e6d004] shadow-sm",
-    "vibrant-green": "bg-[#F9E104] border-[#e6d004] scale-105 z-10 shadow-xl",
-    cream: "bg-[#F9E104] border-[#e6d004] shadow-sm",
+    green: "bg-[#FEF9C3] border-[#FDE047] shadow-sm",
+    "vibrant-green": "bg-[#FEF9C3] border-[#FDE047] scale-105 z-10 shadow-xl",
+    cream: "bg-[#FEF9C3] border-[#FDE047] shadow-sm",
   };
 
   const buttonStyles = {
