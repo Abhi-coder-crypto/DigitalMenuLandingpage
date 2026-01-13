@@ -359,11 +359,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col items-center gap-6">
-            <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain" />
-            <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
-            </p>
+          <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
+            © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
           </div>
         </div>
       </footer>
