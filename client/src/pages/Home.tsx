@@ -199,17 +199,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
             <PricingCard 
               tier={{
-                name: "Fit Basic",
-                price: "2,500",
-                description: "Perfect for getting started with your fitness journey",
+                name: "Static Menu",
+                price: "10,000",
+                description: "Perfect for getting started with your digital presence",
                 features: ["Live Group Training", "Personalized Diet", "Weekly 1 Check-in", "WhatsApp Support"],
                 color: "green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Pro Transformation",
-                price: "5,000",
+                name: "Dynamic Menu",
+                price: "15,000",
                 description: "Most comprehensive program for real results",
                 features: ["Live Group Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
                 recommended: true,
@@ -218,8 +218,8 @@ export default function Home() {
             />
             <PricingCard 
               tier={{
-                name: "Elite Athlete",
-                price: "10,000",
+                name: "Pro",
+                price: "20,000",
                 description: "Premium 1:1 coaching for maximum results",
                 features: ["1:1 Personal Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
                 color: "cream"
