@@ -177,7 +177,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
             <PricingCard 
               tier={{
                 name: "Basic Plan",
@@ -195,6 +195,15 @@ export default function Home() {
                 features: ["1:1 Personal Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
                 recommended: true,
                 color: "vibrant-green"
+              }}
+            />
+            <PricingCard 
+              tier={{
+                name: "Pro Plan",
+                price: "25,000",
+                description: "Ultimate coaching for professional athletes",
+                features: ["1:1 Daily Personal Training", "Custom Supplement Plan", "Daily Check-ins", "24/7 Priority Support", "Private Community Access"],
+                color: "cream"
               }}
             />
           </div>
