@@ -17,42 +17,36 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2 cursor-pointer">
-              <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain" />
-              <span className="font-display font-bold text-xl tracking-tight text-gray-900">
+              <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain" />
+              <span className="font-display font-bold text-2xl tracking-tight text-gray-900">
                 Airavata Tech
               </span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             <button 
               onClick={() => scrollToSection("features")} 
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
             >
               Features
             </button>
             <button 
               onClick={() => scrollToSection("pricing")} 
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection("contact")} 
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
             >
               Contact
             </button>
-            <Button 
-              onClick={() => scrollToSection("contact")}
-              className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 hover:shadow-blue-300 transition-all rounded-full px-6"
-            >
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -73,27 +67,22 @@ export function Navbar() {
           <div className="px-4 pt-2 pb-6 space-y-2">
             <button 
               onClick={() => scrollToSection("features")}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-lg font-bold text-gray-700 hover:bg-gray-50 rounded-md"
             >
               Features
             </button>
             <button 
               onClick={() => scrollToSection("pricing")}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-lg font-bold text-gray-700 hover:bg-gray-50 rounded-md"
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-lg font-bold text-gray-700 hover:bg-gray-50 rounded-md"
             >
               Contact
             </button>
-            <div className="pt-4">
-              <Button onClick={() => scrollToSection("contact")} className="w-full bg-blue-600">
-                Get Started
-              </Button>
-            </div>
           </div>
         </div>
       )}
