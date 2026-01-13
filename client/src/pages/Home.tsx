@@ -139,25 +139,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <FeatureCard 
               icon={QrCode}
-              title="QR Contactless Menu"
+              title={<span className="text-[#4CAF50]">QR Contactless Menu</span>}
               description="Instantly update your menu prices and items. No more reprinting paper menus every time you change a dish."
               colorClass="bg-yellow-50 text-yellow-600"
             />
             <FeatureCard 
               icon={Smartphone}
-              title="Mobile Ordering"
+              title={<span className="text-[#4CAF50]">Mobile Ordering</span>}
               description="Allow customers to order directly from their phones. Reduce wait times and increase table turnover."
               colorClass="bg-blue-50 text-blue-600"
             />
             <FeatureCard 
               icon={TrendingUp}
-              title="Smart Analytics"
+              title={<span className="text-[#4CAF50]">Smart Analytics</span>}
               description="Track your best sellers, peak hours, and customer preferences to make data-driven decisions."
               colorClass="bg-green-50 text-green-600"
             />
             <FeatureCard 
               icon={Zap}
-              title="Fast Integration"
+              title={<span className="text-[#4CAF50]">Fast Integration</span>}
               description="Set up your entire digital menu in less than 30 minutes. No specialized hardware required."
               colorClass="bg-orange-50 text-orange-600"
             />
