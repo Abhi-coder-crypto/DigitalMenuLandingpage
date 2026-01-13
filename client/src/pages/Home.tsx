@@ -95,15 +95,40 @@ export default function Home() {
       </section>
 
       {/* TRUSTED PARTNERS */}
-      <section className="py-12 bg-gray-50 border-y border-gray-100">
+      <section className="py-16 bg-gray-50 border-y border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-8">Trusted by industry leaders</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Logos using text as placeholders since I don't have SVG logos - styling to look like logos */}
-            <h3 className="text-2xl font-display font-bold text-gray-800 flex items-center gap-2"><div className="w-8 h-8 bg-red-500 rounded-md"></div>Zomato</h3>
-            <h3 className="text-2xl font-display font-bold text-gray-800 flex items-center gap-2"><div className="w-8 h-8 bg-orange-500 rounded-md"></div>Swiggy</h3>
-            <h3 className="text-2xl font-display font-bold text-gray-800 flex items-center gap-2"><div className="w-8 h-8 bg-green-500 rounded-md"></div>UberEats</h3>
-            <h3 className="text-2xl font-display font-bold text-gray-800 flex items-center gap-2"><div className="w-8 h-8 bg-blue-500 rounded-md"></div>Dineout</h3>
+          <p className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-12">Trusted by industry leaders</p>
+          <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-20">
+            {[
+              { name: "Barrelborn", src: "/images/partners/barrelborn.png" },
+              { name: "Aahara", src: "/images/partners/aahara.png" },
+              { name: "Ming's", src: "/images/partners/mings.png" }
+            ].map((partner, index) => (
+              <motion.div
+                key={partner.name}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: index * 0.2 
+                }}
+                className="group relative"
+              >
+                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl hover:shadow-2xl transition-all duration-300 grayscale hover:grayscale-0 hover:scale-110">
+                  <img 
+                    src={partner.src} 
+                    alt={partner.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded-full text-xs font-bold text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+                  {partner.name}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
