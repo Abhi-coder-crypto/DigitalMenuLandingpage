@@ -329,7 +329,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain brightness-0 invert" />
+                <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain" />
                 <span className="font-display font-bold text-xl tracking-tight">
                   Airavata Tech
                 </span>
@@ -360,7 +360,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col items-center gap-6">
-            <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain brightness-0 invert opacity-50" />
+            <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain" />
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
             </p>
