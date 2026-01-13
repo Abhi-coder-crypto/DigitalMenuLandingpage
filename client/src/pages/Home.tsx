@@ -180,29 +180,29 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
             <PricingCard 
               tier={{
-                name: "Basic Plan",
-                price: "15,000",
-                description: "Most comprehensive program for real results",
-                features: ["Live Group Training", "Personalized Diet", "Weekly 1 Check-in", "WhatsApp Support"],
+                name: "Static Menu",
+                price: "10,000",
+                description: "Perfect for getting started with your digital presence",
+                features: ["Digital QR Menu", "Mobile Viewing", "Up to 50 Items", "Standard Support"],
                 color: "green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Premium Plan",
-                price: "20,000",
-                description: "Premium 1:1 coaching for maximum results",
-                features: ["1:1 Personal Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
+                name: "Dynamic Menu",
+                price: "15,000",
+                description: "Most comprehensive program for real results",
+                features: ["Everything in Static", "Real-time Updates", "Unlimited Items", "WhatsApp Support"],
                 recommended: true,
                 color: "vibrant-green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Pro Plan",
-                price: "25,000",
-                description: "Ultimate coaching for professional athletes",
-                features: ["1:1 Daily Personal Training", "Custom Supplement Plan", "Daily Check-ins", "24/7 Priority Support", "Private Community Access"],
+                name: "Pro",
+                price: "20,000",
+                description: "Advanced solutions for busy restaurants",
+                features: ["Everything in Dynamic", "Advanced Analytics", "Inventory Management", "24/7 Priority Support"],
                 color: "cream"
               }}
             />
