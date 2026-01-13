@@ -64,7 +64,7 @@ export default function Home() {
             
             <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
               Digitize Your Menu,<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500">
+              <span className="text-[#7dbd68]">
                 Boost Your Revenue
               </span>
             </h1>
@@ -78,7 +78,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-blue-200 hover:shadow-2xl hover:shadow-blue-300 transition-all hover:-translate-y-1"
+                className="bg-[#7dbd68] hover:bg-[#6ca85a] text-white rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-green-100 hover:shadow-2xl hover:shadow-green-200 transition-all hover:-translate-y-1"
               >
                 Get Started Now
               </Button>
@@ -160,42 +160,44 @@ export default function Home() {
       </section>
 
       {/* PRICING SECTION */}
-      <section id="pricing" className="py-24 bg-gray-50 border-y border-gray-100">
+      <section id="pricing" className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Simple, Transparent Pricing</h2>
-            <p className="text-lg text-gray-600">
-              Start small and scale as you grow. No hidden fees.
+            <h1 className="text-6xl font-black text-gray-900 mb-6 tracking-tight">
+              Transform Your Life <span className="text-[#7dbd68]">Today</span>
+            </h1>
+            <p className="text-lg font-bold text-gray-700">
+              Choose the perfect plan that fits your lifestyle and commit to your wellness journey
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
             <PricingCard 
               tier={{
-                name: "Starter",
-                price: "$29",
-                description: "Perfect for small cafes and food trucks starting their digital journey.",
-                features: ["Digital QR Menu", "Unlimited Items", "Basic Analytics", "Email Support"],
+                name: "Fit Basic",
+                price: "2,500",
+                description: "Perfect for getting started with your fitness journey",
+                features: ["Live Group Training", "Personalized Diet", "Weekly 1 Check-in", "WhatsApp Support"],
                 color: "green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Professional",
-                price: "$79",
-                description: "Ideal for growing restaurants that need order management and insights.",
-                features: ["Everything in Starter", "Mobile Ordering", "Kitchen Display System", "Priority Support", "Customer CRM"],
+                name: "Pro Transformation",
+                price: "5,000",
+                description: "Most comprehensive program for real results",
+                features: ["Live Group Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
                 recommended: true,
-                color: "blue"
+                color: "vibrant-green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Enterprise",
-                price: "$199",
-                description: "For restaurant chains and franchises needing custom solutions.",
-                features: ["Everything in Pro", "Multi-location Management", "Custom Branding", "Dedicated Account Manager", "API Access"],
-                color: "red"
+                name: "Elite Athlete",
+                price: "10,000",
+                description: "Premium 1:1 coaching for maximum results",
+                features: ["1:1 Personal Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
+                color: "cream"
               }}
             />
           </div>

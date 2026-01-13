@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PricingTier {
@@ -7,63 +7,65 @@ interface PricingTier {
   description: string;
   features: string[];
   recommended?: boolean;
-  color: "blue" | "green" | "yellow" | "red";
+  color: "green" | "vibrant-green" | "cream";
 }
 
 export function PricingCard({ tier }: { tier: PricingTier }) {
-  const colorStyles = {
-    blue: "bg-blue-600 hover:bg-blue-700 shadow-blue-200",
-    green: "bg-green-600 hover:bg-green-700 shadow-green-200",
-    yellow: "bg-yellow-500 hover:bg-yellow-600 shadow-yellow-200",
-    red: "bg-red-500 hover:bg-red-600 shadow-red-200",
+  const bgStyles = {
+    green: "bg-[#f2faf2] border-[#e0f0e0]",
+    "vibrant-green": "bg-[#e8f5e8] border-[#8cc68c] scale-105 z-10 shadow-xl",
+    cream: "bg-[#fff9f0] border-[#f5e6d3]",
   };
 
-  const accentColor = {
-    blue: "text-blue-600 bg-blue-50",
-    green: "text-green-600 bg-green-50",
-    yellow: "text-yellow-600 bg-yellow-50",
-    red: "text-red-600 bg-red-50",
+  const buttonStyles = {
+    green: "bg-[#7dbd68] hover:bg-[#6ca85a]",
+    "vibrant-green": "bg-[#7dbd68] hover:bg-[#6ca85a]",
+    cream: "bg-[#7dbd68] hover:bg-[#6ca85a]",
   };
 
   return (
     <div className={`
-      relative p-8 rounded-3xl bg-white border transition-all duration-300 flex flex-col
-      ${tier.recommended 
-        ? "border-blue-200 shadow-xl scale-105 z-10" 
-        : "border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1"
-      }
+      relative p-10 rounded-[2.5rem] border transition-all duration-300 flex flex-col min-h-[550px]
+      ${bgStyles[tier.color]}
     `}>
       {tier.recommended && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-bold rounded-full shadow-md">
-          Most Popular
+        <div className="absolute -top-5 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-[#7dbd68] text-white text-xs font-bold rounded-full shadow-md flex items-center gap-1">
+          <Star className="w-3 h-3 fill-white" />
+          Popular
         </div>
       )}
 
-      <div className="mb-8">
-        <h3 className="text-lg font-semibold text-gray-500 uppercase tracking-wider mb-2">{tier.name}</h3>
-        <div className="flex items-baseline gap-1">
-          <span className="text-4xl font-bold font-display text-gray-900">{tier.price}</span>
-          <span className="text-gray-500 font-medium">/month</span>
+      <div className="text-center mb-8 pt-4">
+        <h3 className="text-3xl font-bold text-gray-900 mb-2">{tier.name}</h3>
+        <p className="text-gray-600 text-sm mb-8">{tier.description}</p>
+        
+        <div className="flex flex-col items-center justify-center">
+          <span className="text-6xl font-black text-gray-900 flex items-start gap-1">
+            <span className="text-4xl mt-2">₹</span>
+            {tier.price}
+          </span>
+          <span className="text-gray-500 font-medium text-sm mt-1">per month</span>
         </div>
-        <p className="mt-4 text-gray-600 text-sm leading-relaxed">{tier.description}</p>
       </div>
 
-      <ul className="space-y-4 mb-8 flex-1">
+      <div className="h-px bg-gray-200/50 w-full mb-8" />
+
+      <ul className="space-y-4 mb-10 flex-1 px-2">
         {tier.features.map((feature, i) => (
-          <li key={i} className="flex items-start gap-3">
-            <div className={`mt-0.5 p-1 rounded-full ${accentColor[tier.color]}`}>
-              <Check className="w-3 h-3 stroke-[3]" />
+          <li key={i} className="flex items-center gap-3">
+            <div className="bg-[#7dbd68] p-1 rounded-full">
+              <Check className="w-3 h-3 text-white stroke-[4]" />
             </div>
-            <span className="text-gray-700 font-medium text-sm">{feature}</span>
+            <span className="text-gray-700 font-bold text-sm">{feature}</span>
           </li>
         ))}
       </ul>
 
       <Button 
-        className={`w-full py-6 rounded-xl font-bold text-white shadow-lg transition-all hover:scale-[1.02] ${colorStyles[tier.color]}`}
+        className={`w-full py-8 rounded-[2rem] font-bold text-white text-lg transition-all active:scale-95 ${buttonStyles[tier.color]}`}
         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
       >
-        Choose {tier.name}
+        Start {tier.name}
       </Button>
     </div>
   );
