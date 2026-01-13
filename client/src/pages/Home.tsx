@@ -137,48 +137,48 @@ export default function Home() {
       <section id="features" className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Everything you need to grow</h2>
-            <p className="text-lg text-gray-600">
-              Our platform gives you the tools to modernize your restaurant operations without the technical headache.
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6 tracking-tight">Everything you need to grow</h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Our platform provides essential tools to modernize your restaurant operations with simplicity and efficiency at its core.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <FeatureCard 
               icon={QrCode}
               title="QR Contactless Menu"
               description="Instantly update your menu prices and items. No more reprinting paper menus every time you change a dish."
-              colorClass="bg-blue-50 text-blue-600"
+              colorClass="bg-yellow-50 text-yellow-600"
             />
             <FeatureCard 
               icon={Smartphone}
               title="Mobile Ordering"
               description="Allow customers to order directly from their phones. Reduce wait times and increase table turnover."
-              colorClass="bg-green-50 text-green-600"
+              colorClass="bg-blue-50 text-blue-600"
             />
             <FeatureCard 
               icon={TrendingUp}
               title="Smart Analytics"
               description="Track your best sellers, peak hours, and customer preferences to make data-driven decisions."
-              colorClass="bg-yellow-50 text-yellow-600"
+              colorClass="bg-green-50 text-green-600"
             />
             <FeatureCard 
               icon={Clock}
               title="Real-time Updates"
               description="Mark items as sold out instantly. Changes reflect immediately across all customer devices."
-              colorClass="bg-red-50 text-red-600"
+              colorClass="bg-gray-50 text-gray-600"
             />
             <FeatureCard 
               icon={ShieldCheck}
               title="Secure Payments"
               description="Integrated payment gateway support for seamless, secure transactions directly from the table."
-              colorClass="bg-purple-50 text-purple-600"
+              colorClass="bg-yellow-50 text-yellow-600"
             />
             <FeatureCard 
               icon={Zap}
               title="Fast Integration"
               description="Set up your entire digital menu in less than 30 minutes. No specialized hardware required."
-              colorClass="bg-orange-50 text-orange-600"
+              colorClass="bg-blue-50 text-blue-600"
             />
           </div>
         </div>
@@ -324,18 +324,18 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-16">
+      <footer className="bg-black text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <img src="/logo.png" alt="Airavata Tech Logo" className="w-8 h-8 object-contain" />
-                <span className="font-display font-bold text-xl tracking-tight">
+              <div className="flex items-center gap-3 mb-6">
+                <img src="/logo.png" alt="Airavata Tech Logo" className="w-10 h-10 object-contain" />
+                <span className="font-display font-bold text-2xl tracking-tight">
                   Airavata Tech
                 </span>
               </div>
-              <p className="text-gray-400 max-w-sm">
-                Empowering restaurants with next-generation digital tools. Build better customer experiences today.
+              <p className="text-gray-400 max-w-sm text-lg leading-relaxed">
+                Empowering the future of hospitality with smart, professional digital solutions.
               </p>
             </div>
             
