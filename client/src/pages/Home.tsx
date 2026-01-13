@@ -177,33 +177,24 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
             <PricingCard 
               tier={{
-                name: "Static Menu",
-                price: "10,000",
-                description: "Perfect for getting started with your digital presence",
+                name: "Basic Plan",
+                price: "15,000",
+                description: "Most comprehensive program for real results",
                 features: ["Live Group Training", "Personalized Diet", "Weekly 1 Check-in", "WhatsApp Support"],
                 color: "green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Dynamic Menu",
-                price: "15,000",
-                description: "Most comprehensive program for real results",
-                features: ["Live Group Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
-                recommended: true,
-                color: "vibrant-green"
-              }}
-            />
-            <PricingCard 
-              tier={{
-                name: "Pro",
+                name: "Premium Plan",
                 price: "20,000",
                 description: "Premium 1:1 coaching for maximum results",
                 features: ["1:1 Personal Training", "Personalized Diet", "Weekly 2 Check-ins", "WhatsApp Support", "WhatsApp Community"],
-                color: "cream"
+                recommended: true,
+                color: "vibrant-green"
               }}
             />
           </div>
