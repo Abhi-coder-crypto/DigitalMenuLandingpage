@@ -229,6 +229,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NETWORK SECTION */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Comprehensive Ecosystem</h2>
+            <p className="text-lg text-gray-600">
+              From head offices to central kitchens and individual outlets, we connect your entire operation.
+            </p>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-2xl bg-gray-50/50 p-4 lg:p-8">
+            <img 
+              src="/network.png" 
+              alt="Restaurant and Cloud Kitchen Network" 
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -358,8 +377,11 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
+          <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col items-center gap-6">
+            <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain brightness-0 invert opacity-50" />
+            <p className="text-gray-500 text-sm">
+              © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
