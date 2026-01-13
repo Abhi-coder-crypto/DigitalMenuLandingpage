@@ -41,7 +41,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-20 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-24 overflow-hidden min-h-[80vh] flex items-center">
+      <section className="relative pt-12 pb-12 md:pt-20 md:pb-20 lg:pt-28 lg:pb-24 overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
@@ -54,14 +54,6 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-bold mb-8 border border-blue-100 shadow-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-              </span>
-              Next Gen Restaurant Solutions
-            </div>
-            
             <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
               Digitize Your Menu,<br/>
               <span className="text-yellow-500">
