@@ -74,13 +74,14 @@ export default function Home() {
               >
                 Get Started Now
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="rounded-full px-8 py-7 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
+              <a 
+                href="https://barrel-born.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
               >
                 View Demo
-              </Button>
+              </a>
             </div>
           </motion.div>
         </div>
