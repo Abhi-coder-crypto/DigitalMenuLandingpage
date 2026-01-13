@@ -54,14 +54,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
+            <h1 className="text-4xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-8">
               Digitize Your Menu,<br/>
               <span className="text-[#F9E104]">
                 Boost Your Revenue
               </span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
               Airavata Technologies empowers restaurants with stunning digital menus, 
               contactless ordering, and powerful analytics. Simple, fast, and reliable.
             </p>

@@ -13,14 +13,14 @@ interface PricingTier {
 export function PricingCard({ tier }: { tier: PricingTier }) {
   const bgStyles = {
     green: "bg-[#f2faf2] border-[#e0f0e0]",
-    "vibrant-green": "bg-[#e8f5e8] border-[#8cc68c] scale-105 z-10 shadow-xl",
+    "vibrant-green": "bg-[#e8f5e8] border-[#4CAF50] scale-105 z-10 shadow-xl",
     cream: "bg-[#fff9f0] border-[#f5e6d3]",
   };
 
   const buttonStyles = {
-    green: "bg-[#7dbd68] hover:bg-[#6ca85a]",
-    "vibrant-green": "bg-[#7dbd68] hover:bg-[#6ca85a]",
-    cream: "bg-[#7dbd68] hover:bg-[#6ca85a]",
+    green: "bg-[#4CAF50] hover:bg-[#45a049]",
+    "vibrant-green": "bg-[#4CAF50] hover:bg-[#45a049]",
+    cream: "bg-[#4CAF50] hover:bg-[#45a049]",
   };
 
   return (
@@ -29,7 +29,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
       ${bgStyles[tier.color]}
     `}>
       {tier.recommended && (
-        <div className="absolute -top-5 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-[#7dbd68] text-white text-xs font-bold rounded-full shadow-md flex items-center gap-1">
+        <div className="absolute -top-5 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-[#4CAF50] text-white text-xs font-bold rounded-full shadow-md flex items-center gap-1">
           <Star className="w-3 h-3 fill-white" />
           Popular
         </div>
@@ -53,7 +53,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
       <ul className="space-y-4 mb-10 flex-1 px-2 flex flex-col items-center">
         {tier.features.map((feature, i) => (
           <li key={i} className="flex items-center gap-3 w-full max-w-[240px]">
-            <div className="bg-[#7dbd68] p-1 rounded-full">
+            <div className="bg-[#4CAF50] p-1 rounded-full">
               <Check className="w-3 h-3 text-white stroke-[4]" />
             </div>
             <span className="text-gray-700 font-bold text-sm">{feature}</span>
