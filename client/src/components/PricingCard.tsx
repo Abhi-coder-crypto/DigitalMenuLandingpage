@@ -25,7 +25,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
 
   return (
     <div className={`
-      relative p-10 rounded-[2.5rem] border transition-all duration-300 flex flex-col min-h-[550px]
+      relative p-8 rounded-[2rem] border transition-all duration-300 flex flex-col min-h-[500px]
       ${bgStyles[tier.color]}
     `}>
       {tier.recommended && (
