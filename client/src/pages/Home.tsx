@@ -117,7 +117,7 @@ export default function Home() {
                 }}
                 className="group relative"
               >
-                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl hover:shadow-2xl transition-all duration-300 grayscale hover:grayscale-0 hover:scale-110">
+                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110">
                   <img 
                     src={partner.src} 
                     alt={partner.name}
