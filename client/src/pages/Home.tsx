@@ -66,11 +66,11 @@ export default function Home() {
               contactless ordering, and powerful analytics. Simple, fast, and reliable.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
+                className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
               >
                 Get Started Now
               </Button>
