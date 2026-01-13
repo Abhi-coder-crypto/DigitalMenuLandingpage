@@ -20,9 +20,9 @@ export function Navbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2 cursor-pointer">
-              <img src="/logo.png" alt="Airavata Tech Logo" className="w-12 h-12 object-contain" />
+              <img src="/logo.png" alt="Airavata Technologies Logo" className="w-12 h-12 object-contain" />
               <span className="font-display font-bold text-2xl tracking-tight text-gray-900">
-                Airavata Tech
+                Airavata Technologies
               </span>
             </Link>
           </div>

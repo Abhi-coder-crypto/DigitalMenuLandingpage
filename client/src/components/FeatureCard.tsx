@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface FeatureCardProps {
   icon: LucideIcon;
-  title: string;
+  title: string | React.ReactNode;
   description: string;
   colorClass: string; // e.g., "text-blue-500 bg-blue-50"
 }
