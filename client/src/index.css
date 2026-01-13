@@ -13,13 +13,13 @@
   --foreground: 0 0% 0%;
   
   /* Primary Brand Colors - yellow black green blue */
-  --primary-yellow: 48 96% 53%;
+  --primary-yellow: 53 100% 50%;
   --primary-black: 0 0% 0%;
   --primary-green: 142 71% 45%;
   --primary-blue: 217 91% 60%;
 
   /* Mapping to shadcn semantic tokens */
-  --primary: 48 96% 53%; /* Yellow as primary brand color */
+  --primary: 53 100% 50%; /* Brighter Yellow from logo */
   --primary-foreground: 0 0% 0%;
   
   --secondary: 0 0% 0%; /* Black as secondary */

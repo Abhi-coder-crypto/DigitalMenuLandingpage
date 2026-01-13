@@ -56,7 +56,7 @@ export default function Home() {
           >
             <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
               Digitize Your Menu,<br/>
-              <span className="text-yellow-500">
+              <span className="text-[#F9E104]">
                 Boost Your Revenue
               </span>
             </h1>
@@ -70,7 +70,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-yellow-500 hover:bg-yellow-600 text-black rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
+                className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 py-7 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
               >
                 Get Started Now
               </Button>
