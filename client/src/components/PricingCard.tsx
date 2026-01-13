@@ -50,9 +50,9 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
 
       <div className="h-px bg-gray-200/50 w-full mb-8" />
 
-      <ul className="space-y-4 mb-10 flex-1 px-2">
+      <ul className="space-y-4 mb-10 flex-1 px-2 flex flex-col items-center">
         {tier.features.map((feature, i) => (
-          <li key={i} className="flex items-center gap-3">
+          <li key={i} className="flex items-center gap-3 w-full max-w-[240px]">
             <div className="bg-[#7dbd68] p-1 rounded-full">
               <Check className="w-3 h-3 text-white stroke-[4]" />
             </div>
