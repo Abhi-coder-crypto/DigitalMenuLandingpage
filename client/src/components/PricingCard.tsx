@@ -25,7 +25,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
 
   return (
     <div className={`
-      relative p-8 rounded-[2rem] border transition-all duration-300 flex flex-col min-h-[500px]
+      relative p-6 rounded-[1.5rem] border transition-all duration-300 flex flex-col min-h-[450px]
       ${bgStyles[tier.color]}
     `}>
       {tier.recommended && (
@@ -35,16 +35,16 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
         </div>
       )}
 
-      <div className="text-center mb-8 pt-4">
-        <h3 className="text-3xl font-bold text-gray-900 mb-2">{tier.name}</h3>
-        <p className="text-gray-600 text-sm mb-8">{tier.description}</p>
+      <div className="text-center mb-6 pt-2">
+        <h3 className="text-2xl font-bold text-gray-900 mb-1">{tier.name}</h3>
+        <p className="text-gray-600 text-xs mb-6">{tier.description}</p>
         
         <div className="flex flex-col items-center justify-center">
-          <span className="text-6xl font-black text-gray-900 flex items-start gap-1">
-            <span className="text-4xl mt-2">₹</span>
+          <span className="text-5xl font-black text-gray-900 flex items-start gap-1">
+            <span className="text-3xl mt-1">₹</span>
             {tier.price}
           </span>
-          <span className="text-gray-500 font-medium text-sm mt-1">per month</span>
+          <span className="text-gray-500 font-medium text-xs mt-1">per month</span>
         </div>
       </div>
 
