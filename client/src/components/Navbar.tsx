@@ -21,7 +21,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2 cursor-pointer group">
               <img src="/logo.png" alt="Airavata Technologies Logo" className="w-12 h-12 object-contain" />
-              <span className="font-display font-bold text-2xl tracking-tight text-gray-600 group-hover:text-blue-600 transition-colors">
+              <span className="font-display font-bold text-2xl tracking-tight text-slate-800 transition-colors">
                 Airavata Technologies
               </span>
             </Link>
@@ -31,19 +31,19 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-10">
             <button 
               onClick={() => scrollToSection("features")} 
-              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
+              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
             >
               Features
             </button>
             <button 
               onClick={() => scrollToSection("pricing")} 
-              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
+              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection("contact")} 
-              className="text-gray-600 hover:text-blue-600 font-bold text-lg transition-colors"
+              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
             >
               Contact
             </button>
