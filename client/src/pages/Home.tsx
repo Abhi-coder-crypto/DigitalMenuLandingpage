@@ -128,37 +128,53 @@ export default function Home() {
       </section>
 
       {/* FEATURES SECTION */}
-      <section id="features" className="py-16 bg-white relative">
+      <section id="features" className="py-24 bg-gray-50/50 relative overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-blue-50/30 rounded-full blur-[120px] -translate-x-1/2" />
+          <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-green-50/30 rounded-full blur-[120px] translate-x-1/2" />
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6 tracking-tight">Everything you need to <span className="text-[#4CAF50]">grow</span></h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-6 tracking-wide uppercase"
+            >
+              <Zap className="w-4 h-4" />
+              Platform Features
+            </motion.div>
+            <h2 className="text-5xl font-display font-bold text-gray-900 mb-6 tracking-tight">
+              Everything you need to <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">grow</span>
+            </h2>
+            <p className="text-xl text-gray-600 leading-relaxed font-medium">
               Our platform provides essential tools to modernize your restaurant operations with simplicity and efficiency at its core.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             <FeatureCard 
               icon={QrCode}
-              title={<span className="text-[#4CAF50]">QR Contactless Menu</span>}
+              title="QR Contactless Menu"
               description="Instantly update your menu prices and items. No more reprinting paper menus every time you change a dish."
               colorClass="bg-yellow-50 text-yellow-600"
             />
             <FeatureCard 
               icon={Smartphone}
-              title={<span className="text-[#4CAF50]">Mobile Ordering</span>}
+              title="Mobile Ordering"
               description="Allow customers to order directly from their phones. Reduce wait times and increase table turnover."
               colorClass="bg-blue-50 text-blue-600"
             />
             <FeatureCard 
               icon={TrendingUp}
-              title={<span className="text-[#4CAF50]">Smart Analytics</span>}
+              title="Smart Analytics"
               description="Track your best sellers, peak hours, and customer preferences to make data-driven decisions."
               colorClass="bg-green-50 text-green-600"
             />
             <FeatureCard 
               icon={Zap}
-              title={<span className="text-[#4CAF50]">Fast Integration</span>}
+              title="Fast Integration"
               description="Set up your entire digital menu in less than 30 minutes. No specialized hardware required."
               colorClass="bg-orange-50 text-orange-600"
             />
