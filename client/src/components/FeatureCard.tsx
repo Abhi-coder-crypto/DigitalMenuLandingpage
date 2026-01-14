@@ -12,8 +12,9 @@ export function FeatureCard({ icon: Icon, title, description, colorClass }: Feat
   return (
     <motion.div 
       whileHover={{ y: -6, scale: 1.01 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 400, damping: 25 }}
-      className="group relative p-0.5 rounded-[2rem] bg-gradient-to-br from-gray-100 to-transparent hover:from-blue-400 hover:via-green-400 hover:to-yellow-400 transition-all duration-500 shadow-sm hover:shadow-xl max-w-sm mx-auto w-full"
+      className="group relative p-0.5 rounded-[2rem] bg-gradient-to-br from-gray-100 to-transparent hover:from-blue-400 hover:via-green-400 hover:to-yellow-400 transition-all duration-500 shadow-sm hover:shadow-xl max-w-sm mx-auto w-full cursor-pointer"
     >
       <div className="h-full p-6 bg-white rounded-[1.9rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-white/95">
         <div className={`relative w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${colorClass} group-hover:scale-110 transition-all duration-500 shadow-inner overflow-hidden`}>
