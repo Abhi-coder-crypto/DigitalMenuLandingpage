@@ -204,13 +204,13 @@ export default function Home() {
       </section>
 
       {/* PRICING SECTION */}
-      <section id="pricing" className="py-20 bg-white relative min-h-screen flex items-center">
+      <section id="pricing" className="py-12 bg-white relative min-h-[80vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h1 className="text-6xl font-black text-gray-900 mb-6 tracking-tight">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h1 className="text-4xl lg:text-5xl font-black text-gray-900 mb-4 tracking-tight">
               Scale Your Restaurant <span className="text-[#F9E104]">Now</span>
             </h1>
-            <p className="text-lg font-bold text-gray-700">
+            <p className="text-base font-bold text-gray-600">
               Choose the perfect digital menu plan that fits your business needs and start your digital journey
             </p>
           </div>
