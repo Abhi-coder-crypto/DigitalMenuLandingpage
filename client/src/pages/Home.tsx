@@ -100,15 +100,27 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="hidden lg:block relative"
+              className="hidden lg:flex justify-center relative"
             >
-              <div className="relative w-full aspect-square bg-gradient-to-br from-blue-50 to-green-50 rounded-3xl overflow-hidden border-4 border-white shadow-2xl flex items-center justify-center">
-                <div className="text-gray-400 font-bold text-xl text-center px-8">
-                  Digital Menu Showcase Placeholder
+              <div className="relative w-[300px] h-[600px] pointer-events-none">
+                {/* Smartphone Mockup */}
+                <img 
+                  src="/attached_assets/realistic-smartphone-template-blank-screen-isolated-white-back_1768380292992.png" 
+                  alt="Smartphone Mockup"
+                  className="absolute inset-0 w-full h-full object-contain z-20"
+                />
+                {/* Menu Image inside screen */}
+                <div className="absolute top-[2.5%] left-[6.5%] right-[6.5%] bottom-[2.5%] overflow-hidden rounded-[2.5rem] z-10">
+                  <img 
+                    src="/attached_assets/image_1768380408172.png" 
+                    alt="Digital Menu Interface"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-yellow-400/20 rounded-full blur-2xl" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl" />
+              
+              {/* Decorative elements */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[400px] h-[400px] bg-gradient-to-br from-yellow-100/50 to-blue-100/50 rounded-full blur-3xl opacity-60" />
             </motion.div>
           </div>
         </div>
