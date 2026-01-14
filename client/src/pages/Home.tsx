@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Smartphone, QrCode, TrendingUp, Zap } from "lucide-react";
 import { Link } from "wouter";
+import phoneImg from "@/assets/phone.png";
+import menuImg from "@/assets/menu.png";
 
 export default function Home() {
   const mutation = useContactForm();
@@ -105,14 +107,14 @@ export default function Home() {
               <div className="relative w-[300px] h-[600px] pointer-events-none">
                 {/* Smartphone Mockup */}
                 <img 
-                  src="/attached_assets/realistic-smartphone-template-blank-screen-isolated-white-back_1768380292992.png" 
+                  src={phoneImg} 
                   alt="Smartphone Mockup"
                   className="absolute inset-0 w-full h-full object-contain z-20"
                 />
                 {/* Menu Image inside screen */}
                 <div className="absolute top-[2.5%] left-[6.5%] right-[6.5%] bottom-[2.5%] overflow-hidden rounded-[2.5rem] z-10">
                   <img 
-                    src="/attached_assets/image_1768380408172.png" 
+                    src={menuImg} 
                     alt="Digital Menu Interface"
                     className="w-full h-full object-cover"
                   />
