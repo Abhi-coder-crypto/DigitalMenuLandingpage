@@ -203,32 +203,23 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-8 max-w-6xl mx-auto items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
             <PricingCard 
               tier={{
-                name: "Static Menu",
-                price: "10,000",
+                name: "Static Digital Menu",
+                price: "8,000",
                 description: "Perfect for getting started with your digital presence",
-                features: ["Digital QR Menu", "Mobile Viewing", "Up to 50 Items", "Standard Support"],
+                features: ["Signature View", "Classic Digital Menu", "Prime Menu Display", "Standard Support"],
                 color: "vibrant-green"
               }}
             />
             <PricingCard 
               tier={{
-                name: "Dynamic Menu",
+                name: "Dynamic Digital Menu",
                 price: "15,000",
                 description: "Most comprehensive program for real results",
-                features: ["Everything in Static", "Real-time Updates", "Unlimited Items", "WhatsApp Support"],
+                features: ["Signature Control", "Elite Menu Manager", "Prime Dynamic Menu", "WhatsApp Support"],
                 recommended: true,
-                color: "vibrant-green"
-              }}
-            />
-            <PricingCard 
-              tier={{
-                name: "Pro",
-                price: "20,000",
-                description: "Advanced solutions for busy restaurants",
-                features: ["Everything in Dynamic", "Advanced Analytics", "Inventory Management", "24/7 Priority Support"],
                 color: "vibrant-green"
               }}
             />
