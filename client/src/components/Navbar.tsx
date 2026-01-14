@@ -31,19 +31,19 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-10">
             <button 
               onClick={() => scrollToSection("features")} 
-              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
+              className="text-black font-bold text-lg"
             >
               Features
             </button>
             <button 
               onClick={() => scrollToSection("pricing")} 
-              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
+              className="text-black font-bold text-lg"
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection("contact")} 
-              className="text-slate-600 hover:text-slate-900 font-bold text-lg transition-colors"
+              className="text-black font-bold text-lg"
             >
               Contact
             </button>
