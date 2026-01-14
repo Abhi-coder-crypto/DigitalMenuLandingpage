@@ -42,7 +42,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-16 pb-8 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 lg:pt-40 lg:pb-24 overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
@@ -55,9 +55,18 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-8">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900 text-white text-sm font-bold mb-10 tracking-widest uppercase shadow-xl"
+            >
+              We Create, Innovate and Elevate
+            </motion.div>
+
+            <h1 className="text-4xl lg:text-7xl font-display font-bold text-gray-900 leading-[1.1] mb-8">
               Digitize Your Menu,<br/>
-              <span className="text-[#F9E104]">
+              <span className="text-[#F9E104] drop-shadow-sm">
                 Boost Your Revenue
               </span>
             </h1>
