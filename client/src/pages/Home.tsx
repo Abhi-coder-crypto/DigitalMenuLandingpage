@@ -48,52 +48,69 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900 text-white text-sm font-bold mb-10 tracking-widest uppercase shadow-xl"
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-left"
             >
-              We Create, Innovate and Elevate
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900 text-white text-sm font-bold mb-10 tracking-widest uppercase shadow-xl"
+              >
+                We Create, Innovate and Elevate
+              </motion.div>
+
+              <h1 className="text-4xl lg:text-7xl font-display font-bold text-gray-900 leading-[1.1] mb-8">
+                Digitize Your Menu,<br/>
+                <span className="text-[#F9E104] drop-shadow-sm">
+                  Boost Your Revenue
+                </span>
+              </h1>
+              
+              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
+                Airavata Technologies empowers restaurants with stunning digital menus, 
+                contactless ordering, and powerful analytics. Simple, fast, and reliable.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
+                <Button 
+                  size="lg" 
+                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                  className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
+                >
+                  Get Started Now
+                </Button>
+                <a 
+                  href="https://barrel-born.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
+                >
+                  View Demo
+                </a>
+              </div>
             </motion.div>
 
-            <h1 className="text-4xl lg:text-7xl font-display font-bold text-gray-900 leading-[1.1] mb-8">
-              Digitize Your Menu,<br/>
-              <span className="text-[#F9E104] drop-shadow-sm">
-                Boost Your Revenue
-              </span>
-            </h1>
-            
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Airavata Technologies empowers restaurants with stunning digital menus, 
-              contactless ordering, and powerful analytics. Simple, fast, and reliable.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
-              >
-                Get Started Now
-              </Button>
-              <a 
-                href="https://barrel-born.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
-              >
-                View Demo
-              </a>
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="hidden lg:block relative"
+            >
+              <div className="relative w-full aspect-square bg-gradient-to-br from-blue-50 to-green-50 rounded-3xl overflow-hidden border-4 border-white shadow-2xl flex items-center justify-center">
+                <div className="text-gray-400 font-bold text-xl text-center px-8">
+                  Digital Menu Showcase Placeholder
+                </div>
+              </div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-yellow-400/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
