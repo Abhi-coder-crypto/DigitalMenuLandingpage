@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Smartphone, QrCode, TrendingUp, Zap } from "lucide-react";
 import { Link } from "wouter";
+import heroMockup from "@/assets/hero-mockup.png";
 
 export default function Home() {
   const mutation = useContactForm();
@@ -49,12 +50,12 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="w-full"
+              className="text-left"
             >
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -65,23 +66,23 @@ export default function Home() {
                 We Create, Innovate and Elevate
               </motion.div>
 
-              <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight mb-8">
+              <h1 className="text-4xl lg:text-6xl font-display font-bold text-gray-900 leading-[1.1] mb-6">
                 Digitize Your Menu,<br/>
                 <span className="text-[#F9E104] drop-shadow-sm">
                   Boost Your Revenue
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
                 Airavata Technologies empowers restaurants with stunning digital menus, 
                 contactless ordering, and powerful analytics. Simple, fast, and reliable.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
                 <Button 
                   size="lg" 
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                  className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-10 h-16 text-xl font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
+                  className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
                 >
                   Get Started Now
                 </Button>
@@ -89,11 +90,29 @@ export default function Home() {
                   href="https://barrel-born.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-16 rounded-full px-10 text-xl font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
+                  className="inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
                 >
                   View Demo
                 </a>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="hidden lg:flex justify-center relative"
+            >
+              <div className="relative w-full max-w-[450px] pointer-events-none">
+                <img 
+                  src={heroMockup} 
+                  alt="Digital Menu Showcase"
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                />
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[500px] h-[500px] bg-gradient-to-br from-yellow-100/40 to-blue-100/40 rounded-full blur-3xl opacity-60" />
             </motion.div>
           </div>
         </div>
