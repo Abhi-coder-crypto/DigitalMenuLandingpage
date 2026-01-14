@@ -137,23 +137,14 @@ export default function Home() {
       </section>
 
       {/* FEATURES SECTION */}
-      <section id="features" className="py-24 bg-gray-50/50 relative overflow-hidden">
+      <section id="features" className="py-12 bg-gray-50/50 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-blue-50/30 rounded-full blur-[120px] -translate-x-1/2" />
           <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-green-50/30 rounded-full blur-[120px] translate-x-1/2" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-6 tracking-wide uppercase"
-            >
-              <Zap className="w-4 h-4" />
-              Platform Features
-            </motion.div>
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-5xl font-display font-bold text-gray-900 mb-6 tracking-tight">
               Everything you need to <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">grow</span>
             </h2>
