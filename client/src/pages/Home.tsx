@@ -43,7 +43,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-24 pb-8 md:pt-28 md:pb-12 lg:pt-32 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
+      <section className="relative pt-24 pb-4 md:pt-28 md:pb-12 lg:pt-32 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* TRUSTED PARTNERS */}
-      <section className="py-16 bg-gray-50 border-y border-gray-100 overflow-hidden">
+      <section className="py-8 md:py-16 bg-gray-50 border-y border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-12">Trusted by industry leaders</p>
           <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-20">
