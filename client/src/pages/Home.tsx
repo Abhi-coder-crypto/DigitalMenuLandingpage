@@ -65,7 +65,7 @@ export default function Home() {
                 We Create, Innovate and Elevate
               </motion.div>
 
-              <h1 className="text-4xl lg:text-7xl font-display font-bold text-gray-900 leading-[1.1] mb-8">
+              <h1 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 leading-[1.2] mb-6">
                 Digitize Your Menu,<br/>
                 <span className="text-[#F9E104] drop-shadow-sm">
                   Boost Your Revenue
