@@ -55,7 +55,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-left lg:pl-20"
+              className="text-center lg:text-left lg:pl-20"
             >
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -73,16 +73,16 @@ export default function Home() {
                 </span>
               </h1>
               
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
+              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Airavata Technologies empowers restaurants with stunning digital menus, 
                 contactless ordering, and powerful analytics. Simple, fast, and reliable.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                 <Button 
                   size="lg" 
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                  className="bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
+                  className="w-full sm:w-auto bg-[#F9E104] hover:bg-[#e6d004] text-black rounded-full px-8 h-14 text-lg font-semibold shadow-xl shadow-yellow-100 hover:shadow-2xl hover:shadow-yellow-200 transition-all hover:-translate-y-1"
                 >
                   Get Started Now
                 </Button>
@@ -90,7 +90,7 @@ export default function Home() {
                   href="https://barrel-born.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center h-14 rounded-full px-8 text-lg font-semibold border-2 border-gray-200 hover:border-blue-200 hover:bg-blue-50 text-gray-700 transition-all"
                 >
                   View Demo
                 </a>
@@ -101,9 +101,9 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="hidden lg:flex justify-center relative"
+              className="flex lg:flex justify-center relative"
             >
-              <div className="relative w-full max-w-[280px] pointer-events-none">
+              <div className="relative w-full max-w-[200px] md:max-w-[280px] pointer-events-none">
                 <img 
                   src={heroMockup} 
                   alt="Digital Menu Showcase"
@@ -112,7 +112,7 @@ export default function Home() {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[400px] h-[400px] bg-gradient-to-br from-yellow-100/40 to-blue-100/40 rounded-full blur-3xl opacity-60" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-gradient-to-br from-yellow-100/40 to-blue-100/40 rounded-full blur-3xl opacity-60" />
             </motion.div>
           </div>
         </div>
@@ -215,7 +215,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
             <PricingCard 
               tier={{
                 name: "Static Digital Menu",
