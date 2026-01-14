@@ -313,41 +313,41 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-20">
+      <footer className="bg-white text-slate-900 py-20 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-3 mb-6">
                 <img src="/logo.png" alt="Airavata Technologies Logo" className="w-10 h-10 object-contain" />
-                <span className="font-display font-bold text-2xl tracking-tight">
+                <span className="font-display font-bold text-2xl tracking-tight text-slate-800">
                   Airavata Technologies
                 </span>
               </div>
-              <p className="text-gray-400 max-w-sm text-lg leading-relaxed">
+              <p className="text-slate-500 max-w-sm text-lg leading-relaxed">
                 Empowering the future of hospitality with smart, professional digital solutions.
               </p>
             </div>
             
             <div>
-              <h4 className="font-bold text-lg mb-6">Quick Links</h4>
-              <ul className="space-y-4 text-gray-400">
-                <li><button onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Features</button></li>
-                <li><button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Pricing</button></li>
-                <li><button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Contact</button></li>
+              <h4 className="font-bold text-lg mb-6 text-slate-900">Quick Links</h4>
+              <ul className="space-y-4 text-slate-600">
+                <li><button onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-slate-900 transition-colors">Features</button></li>
+                <li><button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-slate-900 transition-colors">Pricing</button></li>
+                <li><button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-slate-900 transition-colors">Contact</button></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-bold text-lg mb-6">Legal</h4>
-              <ul className="space-y-4 text-gray-400">
-                <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
-                <li><Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link></li>
+              <h4 className="font-bold text-lg mb-6 text-slate-900">Legal</h4>
+              <ul className="space-y-4 text-slate-600">
+                <li><Link href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-slate-900 transition-colors">Terms of Service</Link></li>
+                <li><Link href="/cookies" className="hover:text-slate-900 transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
+          <div className="border-t border-gray-100 mt-16 pt-8 text-center text-slate-400 text-sm font-medium">
             © {new Date().getFullYear()} Airavata Technologies. All rights reserved.
           </div>
         </div>
