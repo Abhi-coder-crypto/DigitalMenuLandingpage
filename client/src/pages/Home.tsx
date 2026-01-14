@@ -61,7 +61,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900 text-white text-sm font-bold mb-10 tracking-widest uppercase shadow-xl"
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900 text-white text-sm font-bold mb-6 tracking-widest uppercase shadow-xl"
               >
                 We Create, Innovate and Elevate
               </motion.div>
