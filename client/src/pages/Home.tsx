@@ -242,7 +242,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <section id="contact" className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Ready to transform your restaurant?</h2>
