@@ -112,11 +112,11 @@ export default function Home() {
                   className="absolute inset-0 w-full h-full object-contain z-20"
                 />
                 {/* Menu Image inside screen */}
-                <div className="absolute top-[2.5%] left-[6.5%] right-[6.5%] bottom-[2.5%] overflow-hidden rounded-[2.5rem] z-10">
+                <div className="absolute top-[3.5%] left-[6%] right-[6%] bottom-[3.5%] overflow-hidden rounded-[2.5rem] z-10 bg-black">
                   <img 
                     src={menuImg} 
                     alt="Digital Menu Interface"
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto min-h-full object-contain"
                   />
                 </div>
               </div>
