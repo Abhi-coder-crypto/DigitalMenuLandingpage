@@ -21,7 +21,7 @@ export function FeatureCard({ icon: Icon, title, description, colorClass }: Feat
           <Icon className="w-7 h-7 relative z-10" />
         </div>
         
-        <h3 className="text-xl font-bold font-display text-[#2563EB] mb-3 tracking-tight transition-colors duration-300">
+        <h3 className="text-xl font-bold font-display text-slate-800 mb-3 tracking-tight transition-colors duration-300">
           {title}
         </h3>
         
