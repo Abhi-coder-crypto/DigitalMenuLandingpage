@@ -220,7 +220,7 @@ export default function Home() {
 
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-24 bg-white">
+      <section id="contact" className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -313,7 +313,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-white text-slate-900 py-20 border-t border-[#FEF9C3]">
+      <footer className="bg-white text-slate-900 pt-16 pb-8 border-t border-[#FEF9C3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
