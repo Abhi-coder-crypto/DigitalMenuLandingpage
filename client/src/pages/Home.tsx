@@ -104,25 +104,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="hidden lg:flex justify-center relative"
             >
-              <div className="relative w-[300px] h-[600px] pointer-events-none">
-                {/* Smartphone Mockup */}
-                <img 
-                  src={phoneImg} 
-                  alt="Smartphone Mockup"
-                  className="absolute inset-0 w-full h-full object-contain z-20"
-                />
-                {/* Menu Image inside screen */}
-                <div className="absolute top-[2%] left-[6%] right-[6%] bottom-[2%] overflow-hidden rounded-[2.5rem] z-10 bg-black">
-                  <img 
-                    src={menuImg} 
-                    alt="Digital Menu Interface"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[400px] h-[400px] bg-gradient-to-br from-yellow-100/50 to-blue-100/50 rounded-full blur-3xl opacity-60" />
+              {/* Image Removed */}
             </motion.div>
           </div>
         </div>
