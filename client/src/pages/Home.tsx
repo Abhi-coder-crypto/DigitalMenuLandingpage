@@ -322,7 +322,7 @@ export default function Home() {
                   <Button 
                     type="submit" 
                     disabled={mutation.isPending}
-                    className="w-full h-12 text-lg font-bold rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg shadow-blue-200 transition-all text-white"
+                    className="w-full h-12 text-lg font-bold rounded-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg shadow-blue-200 transition-all text-white"
                   >
                     {mutation.isPending ? "Sending..." : "Send Message"}
                   </Button>

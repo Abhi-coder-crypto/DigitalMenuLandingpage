@@ -62,7 +62,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
       </ul>
 
       <Button 
-        className={`w-full py-4 rounded-lg font-bold text-white text-sm transition-all active:scale-95 ${buttonStyles[tier.color]}`}
+        className={`w-full py-4 rounded-full font-bold text-white text-sm transition-all active:scale-95 ${buttonStyles[tier.color]}`}
         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
       >
         Start {tier.name}
