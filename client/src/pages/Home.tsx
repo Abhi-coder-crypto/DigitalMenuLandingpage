@@ -55,7 +55,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-left"
+              className="text-left lg:pl-12"
             >
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -66,7 +66,7 @@ export default function Home() {
                 We Create, Innovate and Elevate
               </motion.div>
 
-              <h1 className="text-4xl lg:text-6xl font-display font-bold text-gray-900 leading-[1.1] mb-6">
+              <h1 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 leading-[1.1] mb-6">
                 Digitize Your Menu,<br/>
                 <span className="text-[#F9E104] drop-shadow-sm">
                   Boost Your Revenue
