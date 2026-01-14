@@ -43,7 +43,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 lg:pt-40 lg:pb-24 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative pt-16 pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
@@ -103,7 +103,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="hidden lg:flex justify-center relative"
             >
-              <div className="relative w-full max-w-[320px] pointer-events-none">
+              <div className="relative w-full max-w-[280px] pointer-events-none">
                 <img 
                   src={heroMockup} 
                   alt="Digital Menu Showcase"
