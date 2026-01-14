@@ -43,7 +43,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-16 pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
+      <section className="relative pt-24 pb-8 md:pt-28 md:pb-12 lg:pt-32 lg:pb-16 overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
@@ -215,7 +215,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 max-w-4xl mx-auto justify-center">
             <PricingCard 
               tier={{
                 name: "Static Digital Menu",
