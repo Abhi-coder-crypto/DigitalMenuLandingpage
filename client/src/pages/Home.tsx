@@ -103,7 +103,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="hidden lg:flex justify-center relative"
             >
-              <div className="relative w-full max-w-[450px] pointer-events-none">
+              <div className="relative w-full max-w-[320px] pointer-events-none">
                 <img 
                   src={heroMockup} 
                   alt="Digital Menu Showcase"
@@ -112,7 +112,7 @@ export default function Home() {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[500px] h-[500px] bg-gradient-to-br from-yellow-100/40 to-blue-100/40 rounded-full blur-3xl opacity-60" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[400px] h-[400px] bg-gradient-to-br from-yellow-100/40 to-blue-100/40 rounded-full blur-3xl opacity-60" />
             </motion.div>
           </div>
         </div>
